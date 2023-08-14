@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD firestore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <section class="container">
+      <h1>Utilisateurs de la plateforme</h1>
+      <div class="form">
+        <form action="">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" placeholder="Type here" />
+          <label for="age">L'âge :</label>
+          <input type="text" id="age" placeholder="Type here" />
+        </form>
+        <button id="submitData" name="submitData">Add</button>
+        <button id="updateData" name="updateData">Update</button>
+        <button id="deleteData" name="updateData">Delete</button>
+      </div>
+    </section>
+    <!-- Script -->
+    <script type="module" src="firestore.js"></script>
+  </body>
+</html>

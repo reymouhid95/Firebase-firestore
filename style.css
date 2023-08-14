@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 200, 255, 0.948),
+    rgba(73, 189, 242, 0.902),
+    rgba(0, 53, 128, 0.898)
+  );
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 500px;
+  height: 40vh;
+  margin: 150px auto;
+  background-image: linear-gradient(
+    rgba(0, 42, 255, 0.825),
+    rgba(59, 209, 235, 0.963)
+  );
+  padding: 10px;
+  border-radius: 10px;
+  animation: SlideUp 3s;
+}
+
+h1 {
+  text-align: center;
+  color: bisque;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.form {
+  position: relative;
+}
+
+form {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+input {
+  width: 425px;
+  height: 30px;
+  display: inline-block;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin: 15px auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: aqua;
+  margin-left: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: cadetblue;
+  color: black;
+  transition: 1s;
+}
+
+@keyframes SlideUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
